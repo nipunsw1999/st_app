@@ -1,6 +1,5 @@
 import streamlit as st 
 from streamlit_option_menu import option_menu
-from langchain_app import name
 
 with st.sidebar:
     selected = option_menu(
@@ -13,6 +12,3 @@ with st.sidebar:
 
 if selected:
     st.title(f"You selected {selected}")
-
-
-st.title(name)
